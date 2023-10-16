@@ -1,25 +1,10 @@
-import { Button, Group, Paper, Text, Loader, Box, Center, MantineProvider } from "@mantine/core";
-
+import { Button, Grid, Group, Paper, Text, Loader, Box, Center, MantineProvider } from "@mantine/core";
+import { BLOCKED_PAGES } from "next/dist/shared/lib/constants";
+import Cards from "../components/Cards";
 export default function IndexPage() {
   return (
     <>
-    
-      <Paper>
-          <Center>
-            <Text>SIMPLE TEXT TAG</Text>
-          </Center>
-          <Center>
-            <Text>SIMPLE TEXT TAG SIMPLE TEXT TAG SIMPLE TEXT TAG SIMPLE TEXT TAG</Text>
-          </Center>
-          
-      </Paper>
-      <Center>
-        <Button size="xl">Welcome to Mantine!</Button>
-        <Button size="xl">Welcome to Mantine!</Button>
-        <Loader/>
-      </Center>
-      
-    
+    <Cards/>
     </>
   );
 }
