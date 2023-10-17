@@ -4,9 +4,10 @@ import { MantineProvider  } from "@mantine/core";
 import { theme } from "../theme";
 
 export default function App({ Component, pageProps }: any) {
+
   return (
     
-    <MantineProvider defaultColorScheme="dark" theme={theme}>
+    <MantineProvider theme={theme}>
       <Head>
         <title>Mantine Template</title>
         <meta
